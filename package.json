@@ -21,8 +21,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "install": "npm install"
+    "lint": "next lint"
   }
 }
 
