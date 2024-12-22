@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color: #fe4c55;
+  --accent-color-dark: #e6323c;
+}
+
+.dark {
+  --accent-color: #ff6b73;
+  --accent-color-dark: #ff8f95;
+}
+
+@layer base {
+  a {
+    @apply text-[var(--accent-color)];
+  }
+  a:hover {
+    @apply text-[var(--accent-color-dark)];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--accent-color)] text-white font-bold py-2 px-4 rounded hover:bg-[var(--accent-color-dark)];
+  }
+}
+
